@@ -18,8 +18,9 @@
     "url": "https://github.com/hamzaramzanali/employee-tracker/issues"
   },
   "homepage": "https://github.com/hamzaramzanali/employee-tracker#readme",
-  "Dependencies": {
+  "dependencies": {
     "express": "^4.17.1",
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "inquirer": "^8.2.4"
   }
 }

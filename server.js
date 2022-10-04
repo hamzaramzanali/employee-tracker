@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql2');
+const inquirer = require('inquirer');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -21,6 +22,14 @@ const db = mysql.createConnection(
 // app.get(`/api/movies`, (req, res) => {
 
 //     db.query('SELECT * from movies', function (err, results) {
+//         console.log(results);
+//         res.json(results)
+//     });
+// });
+
+// app.get(`/api/movies/:id`, (req, res) => {
+//     const idFromUser = req.params.id
+//     db.query('SELECT * from movies WHERE id = ?', idFromUser, function (err, results) {
 //         console.log(results);
 //         res.json(results)
 //     });
